@@ -254,6 +254,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1246d3905ff0443419c476774bcbe36e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &416340576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4100105068254046108, guid: d427245d5b2226549a51a18a78c3bc5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832478216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &554808770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7865379471774412124, guid: 7c1a65a4ae7b4114fbca0fbc9fe7f033,
@@ -383,12 +389,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1981784292560616289, guid: cb522df9f82c3364c9c0d4dd8d0a5d23,
     type: 3}
   m_PrefabInstance: {fileID: 4886268226703925289}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &621361834 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2177359812760565510, guid: 9f43c39a6abc38043980a2517daeaa6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 7983938854142967099}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &749509698
 PrefabInstance:
@@ -1446,6 +1446,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3731197958034042108, guid: f3e586dd9b2cc674ca9447af32e40188,
+        type: 3}
+      propertyPath: winUI
+      value: 
+      objectReference: {fileID: 416340576}
     - target: {fileID: 8694641109865844874, guid: f3e586dd9b2cc674ca9447af32e40188,
         type: 3}
       propertyPath: m_Name
@@ -1839,18 +1844,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7983938854142967099}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1872095626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621361834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373cfc8559d5ac34bb5abab14761b49f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1931346405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2285,11 +2278,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2177359812760565510, guid: 9f43c39a6abc38043980a2517daeaa6a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1872095626}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f43c39a6abc38043980a2517daeaa6a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
