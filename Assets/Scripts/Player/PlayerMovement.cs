@@ -25,8 +25,11 @@ public class PlayerMovement : MonoBehaviour
 
     private InputManager _inputManager;
     private CharacterController _characterController;
-
     private Vector3 _moveDirection = Vector3.zero;
+    public Vector3 MoveDirection => _moveDirection;
+    public bool IsPlayerGrounded => _characterController.isGrounded;
+
+    public Action OnJumpAnimationAction;
 
     private void OnEnable()
     {
@@ -64,13 +67,14 @@ public class PlayerMovement : MonoBehaviour
         if (_characterController.isGrounded)
         {
             _moveDirection.y = jumpForce;
+            OnJumpAnimationAction?.Invoke();
         }
     }
 
     private void Move()
     {
         _moveDirection.x = _inputManager.MoveInput.x * moveSpeed;
-        _characterController.Move(_moveDirection * Time.deltaTime);
+        _characterController.Move(MoveDirection * Time.deltaTime);
     }
 
     private void Rotate()
